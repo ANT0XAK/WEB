@@ -17,9 +17,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container _container">
-                <!-- <a href="" class="header__logo _icon-logo">
-                    House
-                </a> -->
+                
 
                 <a href="../index.html" class="header__logoImg">
                     <img src="../iconsvg/logo.svg" class="basketFull">
@@ -44,14 +42,14 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="./entrance.html" class="header__entrance">
-                    Войти
+                <a href="./entrance.html" class="header__entrance active">
+                    <b>Войти</b>
                 </a>
                 <a href="./basket.html" class="header__basket">
                     <img src="../iconsvg/basket-full.svg" class="basketFull">
                 </a>
-                <a href="./basket.html" class="header__price active">
-                    <b>0 руб</b>
+                <a href="./basket.html" class="header__price">
+                    0 руб
                 </a>
                 <a href="" class="header__arrow">
                     <img src="../iconsvg/arrow-down.svg" class="arrowDown">
@@ -64,8 +62,24 @@
             <div class="list-page__list-block list-block">
                 <div class="list-block__container _container">
                     <div class="list-block__body">
-                        <h3>Корзина</h3>
-                        <p class="text-body">Сейчас ваша корзина пуста</p>
+                        <form class="form">
+                            <div>
+                                <h3 style="text-align: center;">Регистрация</h3>
+                                <p class="text-body" style="margin-bottom:40px; text-align: center;">Пожалуйста, заполните форму чтобы создать аккаунт.</p>
+
+                                <b style="padding-left: 15px; font-size: 24px;">Почта</b>
+                                <input id="email" type="text" placeholder="Введите Email" required="required">
+
+                                <b style="padding-left: 15px; font-size: 24px;">Пароль</b>
+                                <input id="password" type="password" placeholder="Введите пароль" required="required">
+
+                                <button id="reg_button" type="submit" class="registerbtn">Зарегестрироваться</button>
+                            </div>
+
+                            <div class="container signin">
+                                <p>Уже есть аккаунт? <a href="#">Войти.</a></p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -101,6 +115,7 @@
         </footer>
     </div>
     <script src="../js/script.js"> </script>
+    <script src="../js/register.js"> </script>
 
 </body>
 
